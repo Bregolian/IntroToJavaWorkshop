@@ -4,31 +4,31 @@ import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
 public class FourSquare {
-	
-	// 2. Create a new Robot
-	
+
+	Robot Johnny5 = new Robot();
 
 	void go() {
-		// 4. Make the robot move as fast as possible
-
-		// 5. Set the pen width to 5
-
+Johnny5.setSpeed(10);
+Johnny5.setPenWidth(5);
 		// 6. Do steps #7 to #8 four times...
-
-			// 7. Set the pen color to random
-	
-			// 1. Call the drawSquare() method
-	
-			// 8. Turn the robot 90 degrees to the right
-
+for (int i = 0; i < 4; i++) {
+		Johnny5.setRandomPenColor();
+	drawSquare();
+	Johnny5.turn(90);
+}
 	}
 
-	/* 3. Fill in the code to draw a square inside the method below. */
+	
 	void drawSquare() {
+		Johnny5.penDown();
+		for (int i = 0; i < 4; i++){
+			Johnny5.move(100);
+		Johnny5.turn(90);
+		
+
+		}
 		JOptionPane.showMessageDialog(null, "yay! you called the drawSquare() method!");
 
-		
-		
 	}
 
 	public static void main(String[] args) {
