@@ -7,6 +7,7 @@ public class FourSquare {
 
 	Robot Johnny5 = new Robot();
 	Robot Max =new Robot();
+	
 	Max.setSpeed(10);
 
 	void go() {
